@@ -5262,7 +5262,7 @@
 			],
 			"chart_config": {
 				"color": ["#9c7a3e", "#b7e28e", "#7febd0", "#8ce8ff"],
-				"types": ["BarPercentChart", "ColumnChart"],
+				"types": ["ColumnChart","BasicChart"],
 				"unit": "個",
 				"categories": [
 					"復興區",
@@ -5293,85 +5293,5 @@
 			"tags": [],
 			"contributors": ["tuic"]
 		}
-	},
-
-	"173": {
-		"id": 173,
-		"index": "pump_flooding_status",
-		"map_config": [
-			{
-				"index": "patrol_rain_floodgate",
-				"paint": {
-					"circle-color": [
-						"match",
-						["get", "all_pumb_lights"],
-						"啟動中",
-						"#ff9800",
-						"#00B2FF"
-					]
-				},
-				"property": [
-					{
-						"key": "station_name",
-						"name": "站名"
-					},
-					{
-						"key": "all_pumb_lights",
-						"name": "總抽水狀態"
-					},
-					{
-						"key": "warning_level",
-						"name": "目前警戒值"
-					},
-					{
-						"key": "start_pumping_level",
-						"name": "抽水起始值"
-					},
-					{
-						"key": "door_num",
-						"name": "水門數目"
-					},
-					{
-						"key": "pumb_num",
-						"name": "抽水機數目"
-					},
-					{
-						"key": "river_basin",
-						"name": "流域"
-					},
-					{
-						"key": "rec_time",
-						"name": "記錄時間"
-					}
-				],
-				"type": "circle",
-				"size": "big",
-				"title": "抽水站"
-			}
-		],
-		"map_filter": {
-			"mode": "byParam",
-			"byParam": {
-				"yParam": "all_pumb_lights"
-			}
-		},
-		"chart_config": {
-			"types": ["GuageChart"],
-			"color": ["#ff9800"],
-			"unit": "個",
-			"categories": ["啟用抽水機"]
-		},
-		"name": "抽水機狀態",
-		"source": "桃園市政府水利局",
-		"time_from": "2023-06-01T00:00:00+08:00",
-		"time_to": null,
-		"update_freq": 10,
-		"update_freq_unit": "minute",
-		"short_desc": "顯示當前全市開啟的抽水站數量",
-		"long_desc": "顯示當前全市開啟的抽水站數量，資料來源為桃園市政府水利處資料，不定期更新。",
-		"use_case": "考慮當日天氣及「水位監測」組件資料，來判斷是否預先啟動抽水機運作。",
-		"links": null,
-		"tags": [],
-		"contributors": ["tuic"]
 	}
 }

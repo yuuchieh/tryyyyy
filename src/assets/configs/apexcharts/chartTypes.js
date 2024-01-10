@@ -17,5 +17,6 @@ export const chartTypes = {
 	IconPercentChart: "圖示比例圖",
 	SpeedometerChart: "儀表板圖",
 	BitmapChart:"點陣圖",
-	TaoyuanChart:"桃園地圖"
+	TaoyuanChart:"桃園地圖",
+	BasicChart:"組合長條圖"	
 };
