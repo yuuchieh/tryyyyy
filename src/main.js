@@ -40,7 +40,7 @@ import BarChartWithGoal from "./components/charts/BarChartWithGoal.vue";
 import IconPercentChart from "./components/charts/IconPercentChart.vue";
 import BitmapChart from "./components/charts/BitmapChart.vue";
 import TaoyuanChart from "./components/charts/TaoyuanChart.vue";
-import BasicChart from "./components/charts/BasicChart";
+import BasicChart from "./components/charts/BasicChart.vue";
 
 const app = createApp(App);
 
