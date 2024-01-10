@@ -5257,85 +5257,121 @@
 			"id": 172,
 			"index": "building_age",
 			"map_config": [
-				{
-					"index": "building_age",
-					"paint": {
-						"circle-color": [
-							"interpolate",
-							["linear"],
-							["get", "age_2021"],
-							5,
-							"#8ce8ff",
-							6,
-							"#7febd0",
-							21,
-							"#b7e28e",
-							41,
-							"#81612a"
-						],
-						"circle-radius": [
-							"interpolate",
-							["linear"],
-							["zoom"],
-							11.99,
-							0,
-							12,
-							0.5,
-							15,
-							2,
-							18,
-							5
-						]
-					},
-					"property": [
-						{
-							"key": "ptname",
-							"name": "行政區"
-						},
-						{
-							"key": "addr_key",
-							"name": "地址"
-						},
-						{
-							"key": "age_2021",
-							"name": "屋齡"
-						}
-					],
-					"type": "circle",
-					"title": "屋齡"
-				}
+
+				
 			],
 			"chart_config": {
 				"color": ["#9c7a3e", "#b7e28e", "#7febd0", "#8ce8ff"],
 				"types": ["BarPercentChart", "ColumnChart"],
-				"unit": "棟",
+				"unit": "個",
 				"categories": [
-					"北投區",
-					"士林區",
-					"內湖區",
-					"南港區",
-					"松山區",
-					"信義區",
-					"中山區",
-					"大同區",
-					"中正區",
-					"萬華區",
-					"大安區",
-					"文山區"
+					"復興區",
+					"觀音區",
+					"新屋區",
+					"平鎮區",
+					"龍潭區",
+					"八德區",
+					"龜山區",
+					"大園區",
+					"蘆竹區",
+					"楊梅區",
+					"大溪區",
+					"中壢區",
+					"桃園區"
 				]
 			},
 			"name": "全市水情感測器分布",
-			"source": "都發局/消防局",
-			"time_from": "2023-06-02T00:00:00+08:00",
+			"source": "桃園市政府水務局",
+			"time_from": "2022-01-01",
 			"time_to": null,
 			"update_freq": null,
 			"update_freq_unit": null,
-			"short_desc": "顯示當前全市建築屋齡分佈情況",
-			"long_desc": "顯示當前全市建築屋齡分佈情況，資料來源為台北市都發局及消防局，不定期更新。",
-			"use_case": "屋齡的計算基準是以建物使用執照生效年份起算，這可以作為了解台北市建築屋齡分佈情況的參考依據。",
+			"short_desc": "顯示當前全市水情感測器分佈狀況",
+			"long_desc": "顯示當前全市水情感測器分佈，資料來源為桃園市水利局，每年一月一日更新。",
+			"use_case": "在洪水、颱風等自然災害的發生時，水情感測器可以提供實時的水位變化和水質情況，有助於及早預警，減少災害造成的損害。",
 			"links": null,
 			"tags": [],
 			"contributors": ["tuic"]
 		}
+	},
+
+	"173": {
+		"id": 173,
+		"index": "pump_flooding_status",
+		"map_config": [
+			{
+				"index": "patrol_rain_floodgate",
+				"paint": {
+					"circle-color": [
+						"match",
+						["get", "all_pumb_lights"],
+						"啟動中",
+						"#ff9800",
+						"#00B2FF"
+					]
+				},
+				"property": [
+					{
+						"key": "station_name",
+						"name": "站名"
+					},
+					{
+						"key": "all_pumb_lights",
+						"name": "總抽水狀態"
+					},
+					{
+						"key": "warning_level",
+						"name": "目前警戒值"
+					},
+					{
+						"key": "start_pumping_level",
+						"name": "抽水起始值"
+					},
+					{
+						"key": "door_num",
+						"name": "水門數目"
+					},
+					{
+						"key": "pumb_num",
+						"name": "抽水機數目"
+					},
+					{
+						"key": "river_basin",
+						"name": "流域"
+					},
+					{
+						"key": "rec_time",
+						"name": "記錄時間"
+					}
+				],
+				"type": "circle",
+				"size": "big",
+				"title": "抽水站"
+			}
+		],
+		"map_filter": {
+			"mode": "byParam",
+			"byParam": {
+				"yParam": "all_pumb_lights"
+			}
+		},
+		"chart_config": {
+			"types": ["GuageChart"],
+			"color": ["#ff9800"],
+			"unit": "個",
+			"categories": ["啟用抽水機"]
+		},
+		"name": "抽水機狀態",
+		"source": "桃園市政府水利局",
+		"time_from": "2023-06-01T00:00:00+08:00",
+		"time_to": null,
+		"update_freq": 10,
+		"update_freq_unit": "minute",
+		"short_desc": "顯示當前全市開啟的抽水站數量",
+		"long_desc": "顯示當前全市開啟的抽水站數量，資料來源為桃園市政府水利處資料，不定期更新。",
+		"use_case": "考慮當日天氣及「水位監測」組件資料，來判斷是否預先啟動抽水機運作。",
+		"links": null,
+		"tags": [],
+		"contributors": ["tuic"]
 	}
 }
