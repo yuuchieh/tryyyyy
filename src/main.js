@@ -69,6 +69,6 @@ app.component("BarChartWithGoal", BarChartWithGoal);
 app.component("IconPercentChart", IconPercentChart);
 app.component("BitmapChart", BitmapChart);
 app.component("TaoyuanChart", TaoyuanChart);
-app.component("BasicChart",BasicChart)
+app.component("BasicChart",BasicChart);
 
 app.mount("#app");
