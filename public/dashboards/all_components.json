@@ -5255,7 +5255,7 @@
 		},
 		"172": {
 			"id": 172,
-			"index": "building_age",
+			"index": "flood_detector",
 			"map_config": [
 
 				
