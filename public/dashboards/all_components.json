@@ -5378,25 +5378,27 @@
 
 					],
 					"type": "line",
-					"size":null,
 					"title": "下水道管線"
 				}
 			],
 
 			"chart_config": {
-
+				"types": ["MapLegend"]
 			},
-			"name": null,
-			"source": null,
+			"chart_data": [
+				{
+					"type": "line",
+					"color": "#9D9152",
+					"name": "雨水地下管線"
+				}
+			],
+
+			"name": "雨水地下管線",
+			"source": "水情局",
 			"time_from": null,
 			"time_to": null,
-			"update_freq":null,
-			"update_freq_unit":null,
-			"short_desc": null,
-			"long_desc": null,
-			"use_case": null,
-			"links": null,
-			"tags": [],
+			"update_freq": null,
+			"update_freq_unit": null,
 			"contributors": ["tuic"]
 		}
 	}
