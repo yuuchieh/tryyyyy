@@ -286,6 +286,14 @@ export const maplayerCommonLayout = {
 	"symbol-triangle_white": {
 		"icon-image": "triangle_white",
 	},
+	"symbol-pump": {
+		"icon-image": [
+		  "case",
+		  ["==", ["get", "all_pumb_lights"], "啟動中"],
+		  "pump_blue",
+		  "pump_white"
+		],
+	},
 	"symbol-youbike": {
 		"icon-image": [
 			"case",

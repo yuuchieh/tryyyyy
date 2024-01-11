@@ -5326,8 +5326,8 @@
 							"name": "抽水機台數"
 						}
 					],
-					"type": "circle",
-					"size": "big",
+					"type": "symbol",
+					"icon":"pump",
 					"title": "抽水機"
 				}
 			],
