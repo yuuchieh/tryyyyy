@@ -5357,6 +5357,10 @@
 			"map_config": [
 				{
 					"index": "undwater",
+					"paint": {
+						"line-color": "#AAAAFF"
+
+					},
 
 					"property": [
 						{
