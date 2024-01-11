@@ -5338,13 +5338,63 @@
 			},
 			"name": "抽水機狀態",
 			"source": "桃園市政府水利處",
-			"time_from": "2023-06-01T00:00:00+08:00",
+			"time_from": "2023-01-01",
 			"time_to": null,
 			"update_freq": 10,
 			"update_freq_unit": "minute",
 			"short_desc": "顯示當前全市開啟的抽水站數量",
 			"long_desc": "顯示當前全市開啟的抽水站數量，資料來源為桃園市政府水利處內部資料，不定期更新。",
 			"use_case": "考慮當日天氣及「水位監測」組件的資料，來探討抽水機的預先派發位置以及使用效能。",
+			"links": null,
+			"tags": [],
+			"contributors": ["tuic"]
+		},
+
+
+		"174": {
+			"id": 174,
+			"index": "underwater",
+			"map_config": [
+				{
+					"index": "underwater",
+
+					"property": [
+						{
+							"key": "No",
+							"name": "管線編號"
+						},
+						{
+							"key": "SSEW_CAT",
+							"name": "主/次管線"
+						},
+						{
+							"key": "US_BLE",
+							"name": "上游水位"
+						},
+						{
+							"key": "DS_BLE",
+							"name": "下游水位"
+						}
+
+					],
+					"type": "line",
+					"size":null,
+					"title": "下水道管線"
+				}
+			],
+
+			"chart_config": {
+
+			},
+			"name": null,
+			"source": null,
+			"time_from": null,
+			"time_to": null,
+			"update_freq":null,
+			"update_freq_unit":null,
+			"short_desc": null,
+			"long_desc": null,
+			"use_case": null,
 			"links": null,
 			"tags": [],
 			"contributors": ["tuic"]
