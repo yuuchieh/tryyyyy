@@ -5299,15 +5299,7 @@
 			"map_config": [
 				{
 					"index": "pump_place",
-					"paint": {
-						"circle-color": [
-							"match",
-							["get", "all_pumb_lights"],
-							"啟動中",
-							"#ed5f5f",
-							"#00B2FF"
-						]
-					},
+
 					"property": [
 						{
 							"key": "preplace_address",
@@ -5326,8 +5318,9 @@
 							"name": "抽水機台數"
 						}
 					],
-					"type": "symbol",
 					"icon":"pump",
+					"type": "symbol",
+					"size":"small",
 					"title": "抽水機"
 				}
 			],

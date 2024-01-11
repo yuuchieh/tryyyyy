@@ -293,6 +293,17 @@ export const maplayerCommonLayout = {
 		  "pump_blue",
 		  "pump_white"
 		],
+		"icon-size": [
+			"interpolate",
+			["linear"],
+			["zoom"],
+			11.99,
+			0.4,
+			14,
+			0.8,
+			22,
+			1.2,
+		],
 	},
 	"symbol-youbike": {
 		"icon-image": [
