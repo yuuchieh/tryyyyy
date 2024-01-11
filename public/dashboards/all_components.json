@@ -5292,6 +5292,69 @@
 			"links": null,
 			"tags": [],
 			"contributors": ["tuic"]
+		},
+		"173": {
+			"id": 173,
+			"index": "pump_flood_status",
+			"map_config": [
+				{
+					"index": "pump_place",
+					"paint": {
+						"circle-color": [
+							"match",
+							["get", "all_pumb_lights"],
+							"啟動中",
+							"#ff9800",
+							"#00B2FF"
+						]
+					},
+					"property": [
+						{
+							"key": "preplace_address",
+							"name": "位置"
+						},
+						{
+							"key": "all_pumb_lights",
+							"name": "總抽水狀態"
+						},
+						{
+							"key": "pump_size",
+							"name": "抽水機尺寸"
+						},
+						{
+							"key": "quantity",
+							"name": "抽水機台數"
+						}
+					],
+					"type": "circle",
+					"size": "big",
+					"title": "抽水機"
+				}
+			],
+			"map_filter": {
+				"mode": "byParam",
+				"byParam": {
+					"yParam": "all_pumb_lights"
+				}
+			},
+			"chart_config": {
+				"types": ["GuageChart", "BarPercentChart"],
+				"color": ["#ed5f5f"],
+				"unit": "機",
+				"categories": ["使用中的抽水機"]
+			},
+			"name": "抽水機狀態",
+			"source": "桃園市政府水利處",
+			"time_from": "2023-06-01T00:00:00+08:00",
+			"time_to": null,
+			"update_freq": 10,
+			"update_freq_unit": "minute",
+			"short_desc": "顯示當前全市開啟的抽水站數量",
+			"long_desc": "顯示當前全市開啟的抽水站數量，資料來源為桃園市政府水利處內部資料，不定期更新。",
+			"use_case": "考慮當日天氣及「水位監測」組件的資料，來探討抽水機的預先派發位置以及使用效能。",
+			"links": null,
+			"tags": [],
+			"contributors": ["tuic"]
 		}
 	}
 }

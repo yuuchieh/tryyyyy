@@ -1,0 +1,24 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "pump_size": "12英吋", "quantity": 1, "preplace_address": "八德忠義街" }, "geometry": { "type": "Point", "coordinates": [ 121.2729746, 24.9711278 ] } },
+{ "type": "Feature", "properties": { "pump_size": "6英吋 ", "quantity": 1, "preplace_address": "觀音溪出海口" }, "geometry": { "type": "Point", "coordinates": [ 121.0877711, 25.0386713 ] } },
+{ "type": "Feature", "properties": { "pump_size": "6英吋 ", "quantity": 1, "preplace_address": "龜山區興邦路 41 巷" }, "geometry": { "type": "Point", "coordinates": [ 121.3260398, 24.9805925 ] } },
+{ "type": "Feature", "properties": { "pump_size": "12英吋", "quantity": 1, "preplace_address": "八德區忠義街 177 號" }, "geometry": { "type": "Point", "coordinates": [ 121.270454, 24.9709727 ] } },
+{ "type": "Feature", "properties": { "pump_size": "6英吋 ", "quantity": 1, "preplace_address": "興邦路 41 巷口處" }, "geometry": { "type": "Point", "coordinates": [ 121.3260398, 24.9805925 ] } },
+{ "type": "Feature", "properties": { "pump_size": "6英吋 ", "quantity": 1, "preplace_address": "僑興新村" }, "geometry": { "type": "Point", "coordinates": [ 121.292709, 24.925601 ] } },
+{ "type": "Feature", "properties": { "pump_size": "6英吋 ", "quantity": 1, "preplace_address": "中壢區吉林三路口" }, "geometry": { "type": "Point", "coordinates": [ 121.2053963, 24.9721514 ] } },
+{ "type": "Feature", "properties": { "pump_size": "6英吋 ", "quantity": 1, "preplace_address": "觀音區出海口" }, "geometry": { "type": "Point", "coordinates": [ 121.1137544, 25.0359365 ] } },
+{ "type": "Feature", "properties": { "pump_size": "6英吋 ", "quantity": 1, "preplace_address": "桃園市成功橋" }, "geometry": { "type": "Point", "coordinates": [ 121.324269, 24.9967014 ] } },
+{ "type": "Feature", "properties": { "pump_size": "6英吋 ", "quantity": 1, "preplace_address": "桃園市崁頂路 1507 巷" }, "geometry": { "type": "Point", "coordinates": [ 121.2651171, 24.9541498 ] } },
+{ "type": "Feature", "properties": { "pump_size": "12英吋", "quantity": 1, "preplace_address": "A7 站公滯 1" }, "geometry": { "type": "Point", "coordinates": [ 121.3854339, 25.0414597 ] } },
+{ "type": "Feature", "properties": { "pump_size": "6英吋 ", "quantity": 1, "preplace_address": "A7 站公滯 4" }, "geometry": { "type": "Point", "coordinates": [ 121.385434, 25.041246 ] } },
+{ "type": "Feature", "properties": { "pump_size": "12英吋", "quantity": 1, "preplace_address": "A7 站公滯 4" }, "geometry": { "type": "Point", "coordinates": [ 121.385434, 25.041246 ] } },
+{ "type": "Feature", "properties": { "pump_size": "3英吋 ", "quantity": 1, "preplace_address": "平鎮區北勢里" }, "geometry": { "type": "Point", "coordinates": [ 121.2218558, 24.9477277 ] } },
+{ "type": "Feature", "properties": { "pump_size": "3英吋 ", "quantity": 1, "preplace_address": "平鎮區東勢里" }, "geometry": { "type": "Point", "coordinates": [ 121.2368819, 24.898378 ] } },
+{ "type": "Feature", "properties": { "pump_size": "3英吋 ", "quantity": 1, "preplace_address": "平鎮區金星里" }, "geometry": { "type": "Point", "coordinates": [ 121.206112, 24.9154743 ] } },
+{ "type": "Feature", "properties": { "pump_size": "3英吋 ", "quantity": 1, "preplace_address": "平鎮區廣達里" }, "geometry": { "type": "Point", "coordinates": [ 121.2089747, 24.9547019 ] } },
+{ "type": "Feature", "properties": { "pump_size": "3英吋 ", "quantity": 1, "preplace_address": "桃園市楊梅區" }, "geometry": { "type": "Point", "coordinates": [ 121.1366715, 24.9242108 ] } }
+]
+}
