@@ -5304,7 +5304,7 @@
 							"match",
 							["get", "all_pumb_lights"],
 							"啟動中",
-							"#ff9800",
+							"#ed5f5f",
 							"#00B2FF"
 						]
 					},
@@ -5315,7 +5315,7 @@
 						},
 						{
 							"key": "all_pumb_lights",
-							"name": "總抽水狀態"
+							"name": "抽水機狀態"
 						},
 						{
 							"key": "pump_size",
