@@ -5393,11 +5393,11 @@
 				{
 					"type": "line",
 					"color": "#9D9152",
-					"name": "雨水地下管線"
+					"name": "雨水下水道管線分布"
 				}
 			],
 
-			"name": "雨水地下管線",
+			"name": "雨水下水道管線分布",
 			"source": "桃園市政府水利處",
 			"time_from": null,
 			"time_to": null,
