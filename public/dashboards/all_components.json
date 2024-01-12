@@ -5414,11 +5414,12 @@
 				"types": ["TimelineSeparateChart"],
 				"color": ["#FF7575"],
 				"unit": "次"
+
 			},
-			"name": "環中東路二段2023-2027淹水發生次數",
+			"name": "環中東路二段淹水發生次數",
 			"source": "桃園市政府水利局",
-			"time_from": "2023-01-01T00:00:00+08:00",
-			"time_to": "2027-06-01T00:00:00+08:00",
+			"time_from": "2023-01-01",
+			"time_to": "2027-12-31",
 			"update_freq": 1,
 			"update_freq_unit": "year",
 			"short_desc": "顯示桃園市中壢區環中東路二段淹水發生次數",

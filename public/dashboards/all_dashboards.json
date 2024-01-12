@@ -75,7 +75,7 @@
 		{
 			"name": "桃園交通",
 			"index": "TaotuanBus",
-			"components": ["170", "171","172","173"],
+			"components": ["170", "171","172","173","175"],
 			"icon": "train"
 		},
 		{
