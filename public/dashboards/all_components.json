@@ -5404,6 +5404,28 @@
 			"update_freq": null,
 			"update_freq_unit": null,
 			"contributors": ["tuic"]
+		},
+		"175": {
+			"id": 175,
+			"index": "flooding_times",
+			"map_config": null,
+			"history_data": true,
+			"chart_config": {
+				"types": ["TimelineSeparateChart"],
+				"color": ["#FF7575"],
+				"unit": "次"
+			},
+			"name": "環中東路二段2023-2027淹水發生次數",
+			"source": "桃園市政府水利局",
+			"time_from": "2023-01-01T00:00:00+08:00",
+			"time_to": "2027-06-01T00:00:00+08:00",
+			"update_freq": 1,
+			"update_freq_unit": "year",
+			"short_desc": "顯示桃園市中壢區環中東路二段淹水發生次數",
+			"long_desc": "顯示今年一月開始台北市使照與建照的發照量，資料來源為台北市都發局建管處開放資料，每月更新",
+			"use_case": "藉由本圖表數據，我們可以追蹤淹水的變化趨勢，並進一步分析相關因素對於淹水發生的影響，以助於評估本系統之績效",
+			"tags": [],
+			"contributors": ["tuic"]
 		}
 	}
 }
